@@ -1,1 +1,1 @@
-# portfolio-dananz-multi-page-html-scss-2025
+A multi-page website implemented using HTML and SCSS.

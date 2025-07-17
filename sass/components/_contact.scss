@@ -1,0 +1,246 @@
+.contact_hero {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.contact_hero__title {
+    margin-bottom: 40px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 140%;
+    color: $black-color;
+}
+
+.contact_hero__description {
+    display: inline-block;
+    margin-bottom: 51px;
+    max-width: 518px;
+    font-size: 18px;
+    line-height: 160%;
+    color: $black-color;
+}
+
+.form {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 839px;
+}
+
+.form__label {
+    margin-bottom: 9px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.form__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form__inner div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form__input_name {
+    width: 413px;
+    height: 62px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 32px;
+    font-size: 16px;
+    line-height: 160%;
+
+    &::placeholder {
+        color: $grey-color;
+    }
+}
+
+.form__input_email {
+    margin-bottom: 19px;
+    height: 62px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 32px;
+    font-size: 16px;
+    line-height: 160%;
+
+    &::placeholder {
+        color: $grey-color;
+    }
+}
+
+.form__input_phone {
+    width: 839px;
+    height: 62px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 104px;
+    font-size: 16px;
+    line-height: 160%;
+
+    &::placeholder {
+        color: $grey-color;
+    }
+}
+
+.form__phone_comtainer {
+    position: relative;
+    margin-bottom: 19px;
+}
+
+.form__select {
+    position: absolute;
+    top: 17px;
+    left: 32px;
+    width: 48px;
+    height: 27px;
+    border-color: transparent;
+    outline: none;
+}
+
+.form__input_message {
+    margin-bottom: 40px;
+    height: 178px;
+    padding-top: 20px;
+    padding-left: 32px;
+    padding-bottom: 132px;
+    font-size: 16px;
+    line-height: 160%;
+
+    &::placeholder {
+        color: $grey-color;
+    }
+}
+
+.form__button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 168px;
+    height: 49px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    border: 1px solid $black-color;
+    background-color: $violet-color;
+    color: $white-color;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        transform: translateY(-2px);
+    }
+}
+
+/* LOCATION SECTION */
+
+.location {
+    padding-bottom: 101px;
+}
+
+.location__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location__title {
+    position: relative;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    color: $black-color;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 10px;
+        left: 90px;
+        width: 510px;
+        height: 2px;
+        background-color: $black-color;
+    }
+}
+
+.location__subtitle {
+    margin-bottom: 24px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 170%;
+}
+
+.location__description {
+    margin-bottom: 39px;
+    font-size: 18px;
+    line-height: 160%;
+    color: $grey-color;
+}
+
+.location__email {
+    margin-bottom: 33px;
+}
+
+.location__email_title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.location__email_description {
+    font-size: 18px;
+    line-height: 160%;
+    color: $grey-color;
+}
+
+.location__phone_title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.location__phone_description {
+    font-size: 18px;
+    line-height: 160%;
+    color: $grey-color;
+}
+
+.location__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+    width: 728px;
+}
+
+.location__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 334px;
+}
+
+.location__item_title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.location__item_description {
+    font-size: 18px;
+    line-height: 160%;
+    color: $grey-color;
+}

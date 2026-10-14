@@ -3418,39 +3418,92 @@ body.menu-open {
   }
 }
 
-.minimalist__description_title {
-  margin-bottom: 24px;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 140%;
+/* MINIMALIST DESCRIPTION SECTION */
+.minimalist__description_container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 40px;
+  margin-bottom: 64px;
+}
+.minimalist__description_container > div {
+  width: 100%;
+  min-width: 0;
+}
+@media screen and (min-width: 768px) {
+  .minimalist__description_container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+    margin-bottom: 72px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .minimalist__description_container {
+    grid-template-columns: repeat(2, minmax(0, 584px));
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 82px;
+  }
 }
 
-.minimalist__description_container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 82px;
+.minimalist__description_title {
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #333333;
 }
-.minimalist__description_container div {
-  width: 584px;
+@media screen and (min-width: 768px) {
+  .minimalist__description_title {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .minimalist__description_title {
+    margin-bottom: 24px;
+  }
 }
 
 .minimalist__description {
-  margin-bottom: 30px;
-  font-size: 18px;
-  line-height: 160%;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.6;
   color: #9C9C9C;
 }
+@media screen and (min-width: 1440px) {
+  .minimalist__description {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+}
 .minimalist__description--margin {
-  margin-top: 60px;
-  margin-bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .minimalist__description--margin {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .minimalist__description--margin {
+    margin-top: 60px;
+  }
 }
 .minimalist__description--bottom {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .minimalist__span {
-  margin-right: 80px;
+  display: inline-block;
+  margin-right: 0;
+}
+@media screen and (min-width: 1440px) {
+  .minimalist__span {
+    margin-right: 56px;
+  }
 }
 
 .minimalist__list {

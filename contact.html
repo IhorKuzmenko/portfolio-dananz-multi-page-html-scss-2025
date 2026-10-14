@@ -24,33 +24,51 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a class="header__link_logo" href="#"
-            ><img src="./images/Home/dananz_logo.png" alt="Dananz logotype"
-          /></a>
+          <a class="header__link_logo" href="./index.html">
+            <img src="./images/Home/dananz_logo.png" alt="Dananz logotype" />
+          </a>
 
-          <nav class="nav">
-            <ul class="nav__list">
-              <li>
-                <a class="nav__link" href="/index.html">Home</a>
-              </li>
-              <li>
-                <a class="nav__link" href="./about.html">About us</a>
-              </li>
-              <li>
-                <a class="nav__link" href="./services.html">Services</a>
-              </li>
-              <li>
-                <a class="nav__link" href="./team.html">Our Teams</a>
-              </li>
-              <li>
-                <a class="nav__link" href="./portfolio.html">Portfolio</a>
-              </li>
-            </ul>
-          </nav>
-          <a type="button" class="header__button" href="#">Contact us</a>
+          <button
+            class="header__menu_button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="header-menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="header__menu" id="header-menu">
+            <nav class="nav" aria-label="Main navigation">
+              <ul class="nav__list">
+                <li>
+                  <a class="nav__link" href="./index.html"> Home </a>
+                </li>
+                <li>
+                  <a class="nav__link" href="./about.html"> About us </a>
+                </li>
+                <li>
+                  <a class="nav__link" href="./services.html"> Services </a>
+                </li>
+                <li>
+                  <a class="nav__link" href="./team.html"> Our Teams </a>
+                </li>
+                <li>
+                  <a class="nav__link" href="./portfolio.html"> Portfolio </a>
+                </li>
+              </ul>
+            </nav>
+
+            <a class="header__button" href="./contact.html" aria-current="page">
+              Contact us
+            </a>
+          </div>
         </div>
       </div>
     </header>
+
     <main>
       <section class="contact_hero">
         <div class="container">
@@ -65,7 +83,7 @@
                 <label class="form__label" for="name">First Name</label>
                 <input
                   class="form__input_name"
-                  type="name"
+                  type="text"
                   name="name"
                   id="name"
                   placeholder="First Name"
@@ -75,7 +93,7 @@
                 <label class="form__label" for="surname">Last Name</label>
                 <input
                   class="form__input_name"
-                  type="name"
+                  type="text"
                   name="surname"
                   id="surname"
                   placeholder="Last Name"
@@ -93,7 +111,7 @@
             />
 
             <label class="form__label" for="number">Phone Number</label>
-            <div class="form__phone_comtainer">
+            <div class="form__phone_container">
               <input
                 class="form__input_phone"
                 type="tel"
@@ -107,15 +125,16 @@
             </div>
 
             <label class="form__label" for="textarea">Message</label>
-            <input
+            <textarea
               class="form__input_message"
-              type="text"
-              name="text"
+              name="message"
               id="textarea"
               placeholder="Your Message"
-            />
+              rows="5"
+              required
+            ></textarea>
 
-            <button class="form__button" type="button">Send Message</button>
+            <button class="form__button" type="submit">Send Message</button>
           </form>
         </div>
       </section>
@@ -212,13 +231,17 @@
                 name="email"
                 placeholder="Email Address"
               />
-              <button class="footer__button" type="submit"></button>
+              <button
+                class="footer__button"
+                type="submit"
+                aria-label="Subscribe to newsletter"
+              ></button>
             </form>
             <div class="footer__social_container">
               <p class="footer__social_title">Follow us On</p>
               <ul class="social__list">
                 <li>
-                  <a class="social__link" href="#">
+                  <a class="social__link" href="#" aria-label="Facebook">
                     <svg class="social__icon">
                       <use
                         href="./images/Home/socials_icons.svg#icon-facebook"
@@ -228,7 +251,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="social__link" href="#">
+                  <a class="social__link" href="#" aria-label="Instagram">
                     <svg class="social__icon">
                       <use
                         href="./images/Home/socials_icons.svg#icon-instagram"
@@ -238,7 +261,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="social__link" href="#">
+                  <a class="social__link" href="#" aria-label="Tiktok">
                     <svg class="social__icon">
                       <use
                         href="./images/Home/socials_icons.svg#icon-tiktok"
@@ -248,7 +271,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="social__link" href="#">
+                  <a class="social__link" href="#" aria-label="Youtube">
                     <svg class="social__icon">
                       <use
                         href="./images/Home/socials_icons.svg#icon-youtube"
@@ -263,5 +286,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js" defer></script>
   </body>
 </html>

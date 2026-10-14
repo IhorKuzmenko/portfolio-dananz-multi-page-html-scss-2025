@@ -1316,38 +1316,97 @@ body.menu-open {
 /* FOOTER SECTION */
 
 .footer {
-  padding-top: 80px;
-  padding-bottom: 84px;
+  padding: 48px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 64px 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 80px 0 84px;
+  }
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+  }
+}
+
+.footer__inner > div {
+  min-width: 0;
+
+  @media screen and (min-width: 768px) {
+    flex: 1 1 0;
+  }
+}
+
+.footer__inner > div:last-child {
+  padding-top: 0;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 32px;
+  }
 }
 
 .footer__logo {
   display: inline-block;
-  margin-bottom: 10px;
-  width: 126px;
-  height: 54px;
+  width: 110px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 1440px) {
+    width: 126px;
+    margin-bottom: 10px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .footer__title {
   max-width: 481px;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 600;
-  line-height: 170%;
+  line-height: 1.5;
+
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 36px;
+    line-height: 1.7;
+  }
 }
 
 .footer__description {
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
-  margin-left: 24px;
   max-width: 356px;
-  font-size: 18px;
-  line-height: 160%;
+  margin: 0 0 16px 24px;
+  font-size: 16px;
+  line-height: 1.6;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 
   &::before {
-    position: absolute;
     content: "";
+    position: absolute;
     left: -24px;
+    flex-shrink: 0;
     width: 14px;
     height: 14px;
     border-radius: 50%;
@@ -1357,55 +1416,84 @@ body.menu-open {
 
 .footer__form {
   position: relative;
-  margin-bottom: 39px;
+  width: 100%;
   max-width: 440px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 39px;
+  }
 }
 
 .footer__input {
-  width: 440px;
-  padding-top: 7px;
-  padding-bottom: 15px;
-  border-color: transparent;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 10px 40px 15px 0;
+  font: inherit;
+  font-size: 16px;
+  color: $main-color;
+  background-color: transparent;
+  border: none;
   border-bottom: 1px solid $black-color;
+  border-radius: 0;
 
   &::placeholder {
-    color: $light-grey-color;
+    color: $grey-color;
   }
 
-  &:hover,
   &:focus {
     outline: none;
+    border-bottom-color: $violet-color;
   }
 }
 
 .footer__button {
-  cursor: pointer;
   position: absolute;
-  top: 0;
-  right: 5px;
-  width: 23px;
-  height: 9px;
+  top: 50%;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  border: none;
   background-color: transparent;
-  border-color: transparent;
-
   background-image: url("../images/Home/footer_arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 23px auto;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid $violet-color;
+    outline-offset: 3px;
+  }
+}
+
+.footer__social_container {
+  width: fit-content;
+  max-width: 100%;
+  margin-left: 0;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
 }
 
 .footer__social_title {
   margin-bottom: 15px;
   font-size: 16px;
-  line-height: 160%;
+  line-height: 1.6;
 }
 
 .social__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
 
-  li:not(:last-child) {
-    margin-right: 25px;
+  @media screen and (min-width: 768px) {
+    gap: 25px;
   }
 }
 
@@ -1419,37 +1507,32 @@ body.menu-open {
   background-color: $light-grey-color;
 
   transition:
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms ease,
+    transform 250ms ease;
 
   &:hover,
   &:focus {
     background-color: $violet-color;
+    transform: translateY(-2px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $violet-color;
+    outline-offset: 3px;
   }
 }
 
 .social__icon {
+  display: block;
   width: 24px;
   height: 24px;
+  fill: $main-color;
+  transition: fill 250ms ease;
 }
 
 .social__link:hover .social__icon,
 .social__link:focus .social__icon {
   fill: $white-color;
-}
-
-.footer__inner {
-  display: flex;
-  justify-content: space-between;
-
-  div:last-child {
-    padding-top: 32px;
-  }
-}
-
-.footer__social_container {
-  max-width: 203px;
-  margin-left: auto;
 }
 
 .facebook_link {

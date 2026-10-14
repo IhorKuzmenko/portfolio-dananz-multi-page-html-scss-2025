@@ -3326,8 +3326,19 @@ body.menu-open {
   }
 }
 
+/* MINIMALIST HERO SECTION */
 .minimalist {
-  padding-bottom: 100px;
+  padding-bottom: 64px;
+}
+@media screen and (min-width: 768px) {
+  .minimalist {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .minimalist {
+    padding-bottom: 100px;
+  }
 }
 
 .minimalist__inner {
@@ -3335,26 +3346,76 @@ body.menu-open {
 }
 
 .minimalist__title {
-  margin-bottom: 40px;
-  font-size: 56px;
+  margin-bottom: 20px;
+  font-size: 32px;
   font-weight: 700;
-  line-height: 140%;
+  line-height: 1.4;
   color: #000000;
+}
+@media screen and (min-width: 375px) {
+  .minimalist__title {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .minimalist__title {
+    margin-bottom: 28px;
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .minimalist__title {
+    margin-bottom: 40px;
+    font-size: 56px;
+  }
 }
 
 .minimalist__subtitle {
-  display: inline-block;
-  margin-bottom: 53px;
+  display: block;
   max-width: 518px;
-  font-size: 18px;
-  line-height: 160%;
+  margin: 0 auto 32px;
+  font-size: 14px;
+  line-height: 1.6;
   color: #000000;
+}
+@media screen and (min-width: 375px) {
+  .minimalist__subtitle {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .minimalist__subtitle {
+    margin-bottom: 48px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .minimalist__subtitle {
+    margin-bottom: 53px;
+  }
 }
 
 .minimalist__image {
-  margin-bottom: 100px;
+  display: block;
+  width: 100%;
   max-width: 1200px;
-  min-height: 513px;
+  height: auto;
+  min-height: 0;
+  margin: 0 auto 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .minimalist__image {
+    margin-bottom: 80px;
+    aspect-ratio: 1200/513;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .minimalist__image {
+    min-height: 513px;
+    margin-bottom: 100px;
+  }
 }
 
 .minimalist__description_title {

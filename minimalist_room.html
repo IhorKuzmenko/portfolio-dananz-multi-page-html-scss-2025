@@ -1,176 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
-        integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./sass/main.css">
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+      integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
     <title>Dananz</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="header__link_logo" href="./index.html">
+            <img src="./images/Home/dananz_logo.png" alt="Dananz logotype" />
+          </a>
 
-    <body>
-        <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <a class="header__link_logo" href="#"><img src="./images/Home/dananz_logo.png"
-                            alt="Dananz logotype"></a>
+          <button
+            class="header__menu_button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="header-menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-                    <nav class="nav">
-                        <ul class="nav__list">
-                            <li>
-                                <a class="nav__link" href="./index.html">Home</a>
-                            </li>
-                            <li>
-                                <a class="nav__link" href="./about.html">About us</a>
-                            </li>
-                            <li>
-                                <a class="nav__link" href="./services.html">Services</a>
-                            </li>
-                            <li>
-                                <a class="nav__link" href="./team.html">Our Teams</a>
-                            </li>
-                            <li>
-                                <a class="nav__link" href="./portfolio.html">Portfolio</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <a type="button" class="header__button" href="./contact.html">Contact us</a>
-                </div>
+          <div class="header__menu" id="header-menu">
+            <nav class="nav" aria-label="Main navigation">
+              <ul class="nav__list">
+                <li>
+                  <a class="nav__link" href="./index.html">Home</a>
+                </li>
+                <li>
+                  <a class="nav__link" href="./about.html">About us</a>
+                </li>
+                <li>
+                  <a class="nav__link" href="./services.html">Services</a>
+                </li>
+                <li>
+                  <a class="nav__link" href="./team.html">Our Teams</a>
+                </li>
+                <li>
+                  <a class="nav__link" href="./portfolio.html">Portfolio</a>
+                </li>
+              </ul>
+            </nav>
+
+            <a class="header__button" href="./contact.html"> Contact us </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="minimalist">
+        <div class="container">
+          <div class="minimalist__inner">
+            <h1 class="minimalist__title">Minimalist Room</h1>
+            <p class="minimalist__subtitle">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+            <img
+              class="minimalist__image"
+              src="./images/minimalist_room/minimalist_hero.jpg"
+              alt="Sofa with pillows, table, plant, lamp"
+            />
+          </div>
+          <div class="minimalist__description_container">
+            <div>
+              <h3 class="minimalist__description_title">Project Overview</h3>
+              <p class="minimalist__description">
+                Online learning with us does not interfere with your daily life.
+                because learning can be done anytime and anywhere. Online
+                learning with us does not interfere with your daily life.
+                because learning can be done anytime and anywhere. Online
+                learning with us does not interfere with your daily life.
+                because learning can be done anytime and anywhere.
+              </p>
+              <p
+                class="minimalist__description minimalist__description--margin"
+              >
+                <span class="minimalist__span">July 22 - 2022</span>Interior
+                Design - Furniture
+              </p>
             </div>
-        </header>
-        <main>
-            <section class="minimalist">
-                <div class="container">
-                    <div class="minimalist__inner">
-                        <h1 class="minimalist__title">Minimalist Room</h1>
-                        <p class="minimalist__subtitle">It is a long established fact that a reader will be distracted
-                            by
-                            the readable content of a page when looking at its layout.</p>
-                        <img class="minimalist__image" src="./images/minimalist_room/minimalist_hero.jpg"
-                            alt="Sofa with pillows, table, plant, lamp">
-                    </div>
-                    <div class="minimalist__description_container">
-                        <div>
-                            <h3 class="minimalist__description_title">Project Overview</h3>
-                            <p class="minimalist__description">Online learning with us does not interfere with your
-                                daily life. because learning can be
-                                done anytime and anywhere. Online learning with us does not interfere with your daily
-                                life. because learning can be done anytime and anywhere. Online learning with us does
-                                not interfere with your daily life. because learning can be done anytime and anywhere.
-                            </p>
-                            <p class="minimalist__description minimalist__description--margin"><span
-                                    class="minimalist__span">July 22 - 2022</span>Interior Design - Furniture
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="minimalist__description_title">Design Process</h3>
-                            <p class="minimalist__description">
-                                Online learning with us does not interfere with your daily life. because learning can be
-                                done anytime and anywhere. Online learning with us does not interfere with your daily
-                                life. because learning can be done anytime and anywhere.
-                            </p>
-                            <p class="minimalist__description minimalist__description--bottom">
-                                Online learning with us does not interfere with your daily life. because learning can be
-                                done anytime and anywhere. Online learning with us does not interfere with your daily
-                                life. because learning can be done anytime and anywhere.
-                            </p>
-                        </div>
-                    </div>
-                    <ul class="minimalist__list">
-                        <li class="minimalist__item">
-                            <img src="./images/minimalist_room/gallery_img_1.jpg" alt="Chair and laundry basket">
-                        </li>
-                        <li class="minimalist__item">
-                            <img src="./images/minimalist_room/gallery_img_2.jpg"
-                                alt="Smartphone, notebook, pen, glasses">
-                        </li>
-                        <li class="minimalist__item">
-                            <img src="./images/minimalist_room/gallery_img_3.jpg"
-                                alt="Sofa with pillows, plant, lamp, chest of drawers">
-                        </li>
-                        <li class="minimalist__item">
-                            <img src="./images/minimalist_room/gallery_img_4.jpg"
-                                alt="Sofa with pillow, table, book, table lamp">
-                        </li>
-                        <li class="minimalist__item">
-                            <img src="./images/minimalist_room/gallery_img_5.jpg"
-                                alt="White empty room with ceiling lamps">
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="contact">
-                <div class="container">
-                    <div class="contact__inner">
-                        <div>
-                            <h2 class="contact__title">Let's discuss making your interior like a dream place!</h2>
-                        </div>
-                        <div>
-                            <p class="contact__description">Contact us below to work together to build your amazing
-                                interior
-                            </p>
-                            <a href="./contact.html" class="contact__button" type="button">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__inner">
-                    <div>
-                        <a class="footer__logo" href="#"><img src="./images/Home/dananz_logo.png"
-                                alt="Dananz logotype"></a>
-                        <h2 class="footer__title">One of the best furniture agency.</h2>
-                    </div>
-                    <div>
-                        <p class="footer__description">Enter your email to get the laterst news</p>
-                        <form class="footer__form">
-                            <input class="footer__input" type="email" name="email" placeholder="Email Address">
-                            <button class="footer__button" type="submit"></button>
-                        </form>
-                        <div class="footer__social_container">
-                            <p class="footer__social_title">Follow us On</p>
-                            <ul class="social__list">
-                                <li><a class="social__link" href="#">
-                                        <svg class="social__icon">
-                                            <use href="./images/Home/socials_icons.svg#icon-facebook" alt="Facebook">
-                                            </use>
-                                        </svg>
-                                    </a></li>
-                                <li><a class="social__link" href="#">
-                                        <svg class="social__icon">
-                                            <use href="./images/Home/socials_icons.svg#icon-instagram" alt="Instagram">
-                                            </use>
-                                        </svg>
-                                    </a></li>
-                                <li><a class="social__link" href="#">
-                                        <svg class="social__icon">
-                                            <use href="./images/Home/socials_icons.svg#icon-tiktok" alt="Tiktok"></use>
-                                        </svg>
-                                    </a></li>
-                                <li><a class="social__link" href="#">
-                                        <svg class="social__icon">
-                                            <use href="./images/Home/socials_icons.svg#icon-youtube" alt="Youtube">
-                                            </use>
-                                        </svg>
-                                    </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div>
+              <h3 class="minimalist__description_title">Design Process</h3>
+              <p class="minimalist__description">
+                Online learning with us does not interfere with your daily life.
+                because learning can be done anytime and anywhere. Online
+                learning with us does not interfere with your daily life.
+                because learning can be done anytime and anywhere.
+              </p>
+              <p
+                class="minimalist__description minimalist__description--bottom"
+              >
+                Online learning with us does not interfere with your daily life.
+                because learning can be done anytime and anywhere. Online
+                learning with us does not interfere with your daily life.
+                because learning can be done anytime and anywhere.
+              </p>
             </div>
-        </footer>
-    </body>
-
+          </div>
+          <ul class="minimalist__list">
+            <li class="minimalist__item">
+              <img
+                src="./images/minimalist_room/gallery_img_1.jpg"
+                alt="Chair and laundry basket"
+              />
+            </li>
+            <li class="minimalist__item">
+              <img
+                src="./images/minimalist_room/gallery_img_2.jpg"
+                alt="Smartphone, notebook, pen, glasses"
+              />
+            </li>
+            <li class="minimalist__item">
+              <img
+                src="./images/minimalist_room/gallery_img_3.jpg"
+                alt="Sofa with pillows, plant, lamp, chest of drawers"
+              />
+            </li>
+            <li class="minimalist__item">
+              <img
+                src="./images/minimalist_room/gallery_img_4.jpg"
+                alt="Sofa with pillow, table, book, table lamp"
+              />
+            </li>
+            <li class="minimalist__item">
+              <img
+                src="./images/minimalist_room/gallery_img_5.jpg"
+                alt="White empty room with ceiling lamps"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <div class="contact__inner">
+            <div>
+              <h2 class="contact__title">
+                Let's discuss making your interior like a dream place!
+              </h2>
+            </div>
+            <div>
+              <p class="contact__description">
+                Contact us below to work together to build your amazing interior
+              </p>
+              <a href="./contact.html" class="contact__button" type="button"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div>
+            <a class="footer__logo" href="#"
+              ><img src="./images/Home/dananz_logo.png" alt="Dananz logotype"
+            /></a>
+            <h2 class="footer__title">One of the best furniture agency.</h2>
+          </div>
+          <div>
+            <p class="footer__description">
+              Enter your email to get the laterst news
+            </p>
+            <form class="footer__form">
+              <input
+                class="footer__input"
+                type="email"
+                name="email"
+                placeholder="Email Address"
+              />
+              <button
+                class="footer__button"
+                type="submit"
+                aria-label="Subscribe to newsletter"
+              ></button>
+            </form>
+            <div class="footer__social_container">
+              <p class="footer__social_title">Follow us On</p>
+              <ul class="social__list">
+                <li>
+                  <a class="social__link" href="#" aria-label="Facebook">
+                    <svg class="social__icon">
+                      <use
+                        href="./images/Home/socials_icons.svg#icon-facebook"
+                        alt="Facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="#" aria-label="Instagram">
+                    <svg class="social__icon">
+                      <use
+                        href="./images/Home/socials_icons.svg#icon-instagram"
+                        alt="Instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="#" aria-label="Tiktok">
+                    <svg class="social__icon">
+                      <use
+                        href="./images/Home/socials_icons.svg#icon-tiktok"
+                        alt="Tiktok"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="#" aria-label="Youtube">
+                    <svg class="social__icon">
+                      <use
+                        href="./images/Home/socials_icons.svg#icon-youtube"
+                        alt="Youtube"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/menu.js" defer></script>
+  </body>
 </html>

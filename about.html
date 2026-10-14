@@ -22,35 +22,55 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a class="header__link_logo" href="#"
-            ><img src="./images/Home/dananz_logo.png" alt="Dananz logotype"
-          /></a>
+          <a class="header__link_logo" href="./index.html">
+            <img src="./images/Home/dananz_logo.png" alt="Dananz logotype" />
+          </a>
 
-          <nav class="nav">
-            <ul class="nav__list">
-              <li>
-                <a class="nav__link" href="./index.html">Home</a>
-              </li>
-              <li>
-                <a class="nav__link nav__link--active" href="#">About us</a>
-              </li>
-              <li>
-                <a class="nav__link" href="./services.html">Services</a>
-              </li>
-              <li>
-                <a class="nav__link" href="./team.html">Our Teams</a>
-              </li>
-              <li>
-                <a class="nav__link" href="./portfolio.html">Portfolio</a>
-              </li>
-            </ul>
-          </nav>
-          <a type="button" class="header__button" href="./contact.html"
-            >Contact us</a
+          <button
+            class="header__menu_button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="header-menu"
           >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="header__menu" id="header-menu">
+            <nav class="nav" aria-label="Main navigation">
+              <ul class="nav__list">
+                <li>
+                  <a class="nav__link" href="./index.html">Home</a>
+                </li>
+                <li>
+                  <a
+                    class="nav__link nav__link--active"
+                    href="./about.html"
+                    aria-current="page"
+                  >
+                    About us
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link" href="./services.html"> Services </a>
+                </li>
+                <li>
+                  <a class="nav__link" href="./team.html"> Our Teams </a>
+                </li>
+                <li>
+                  <a class="nav__link" href="./portfolio.html"> Portfolio </a>
+                </li>
+              </ul>
+            </nav>
+
+            <a class="header__button" href="./contact.html"> Contact us </a>
+          </div>
         </div>
       </div>
     </header>
+
     <main>
       <section class="hero_about">
         <div class="container">
@@ -184,13 +204,17 @@
                 name="email"
                 placeholder="Email Address"
               />
-              <button class="footer__button" type="submit"></button>
+              <button
+                class="footer__button"
+                type="submit"
+                aria-label="Subscribe to newsletter"
+              ></button>
             </form>
             <div class="footer__social_container">
               <p class="footer__social_title">Follow us On</p>
               <ul class="social__list">
                 <li>
-                  <a class="social__link" href="#">
+                  <a class="social__link" href="#" aria-label="Facebook">
                     <svg class="social__icon">
                       <use
                         href="./images/Home/socials_icons.svg#icon-facebook"
@@ -200,7 +224,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="social__link" href="#">
+                  <a class="social__link" href="#" aria-label="Instagram">
                     <svg class="social__icon">
                       <use
                         href="./images/Home/socials_icons.svg#icon-instagram"
@@ -210,7 +234,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="social__link" href="#">
+                  <a class="social__link" href="#" aria-label="Tiktok">
                     <svg class="social__icon">
                       <use
                         href="./images/Home/socials_icons.svg#icon-tiktok"
@@ -220,7 +244,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="social__link" href="#">
+                  <a class="social__link" href="#" aria-label="Youtube">
                     <svg class="social__icon">
                       <use
                         href="./images/Home/socials_icons.svg#icon-youtube"
@@ -235,5 +259,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js" defer></script>
   </body>
 </html>

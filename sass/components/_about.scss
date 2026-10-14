@@ -1,179 +1,229 @@
+/* HERO ABOUT SECTION */
+
 .hero_about {
-    text-align: center;
+  padding-bottom: 64px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 80px;
+  }
+
+  @media screen and (min-width: 1440px) {
     padding-bottom: 100px;
+  }
 }
 
 .hero_about__title {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: $black-color;
+
+  @media screen and (min-width: 375px) {
+    font-size: 36px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: 1440px) {
     margin-bottom: 36px;
     font-size: 56px;
-    font-weight: 700;
-    line-height: 140%;
-    color: $black-color;
+  }
 }
 
 .hero_about__description {
-    display: inline-block;
-    margin-bottom: 86px;
-    max-width: 582px;
+  display: block;
+  max-width: 582px;
+  margin: 0 auto 32px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: $black-color;
+
+  @media screen and (min-width: 375px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 56px;
     font-size: 18px;
-    line-height: 160%;
-    color: $black-color;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 86px;
+  }
 }
 
 .hero__about_image {
-    max-width: 1200px;
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  min-height: 0;
+  margin: 0 auto;
+  object-fit: cover;
+
+  @media screen and (min-width: 768px) {
+    aspect-ratio: 1200 / 513;
+  }
+
+  @media screen and (min-width: 1440px) {
     min-height: 513px;
+  }
 }
 
 /* ACHIEVEMENT SECTION */
 
 .achievement {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .achievement__title {
-    position: relative;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 150%;
-    color: $black-color;
+  position: relative;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: $black-color;
 
-    &::after {
-        position: absolute;
-        content: '';
-        top: 10px;
-        left: 136px;
-        width: 464px;
-        height: 2px;
-        background-color: $black-color;
-    }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 136px;
+    width: 464px;
+    height: 2px;
+    background-color: $black-color;
+  }
 }
 
 .achievement__subtitle {
-    margin-bottom: 56px;
-    max-width: 738px;
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 170%;
-    color: $black-color;
+  margin-bottom: 56px;
+  max-width: 738px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 170%;
+  color: $black-color;
 }
 
 .achievement__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .achievement__image {
-    max-width: 883px;
-    min-height: 525px;
+  max-width: 883px;
+  min-height: 525px;
 }
 
 .achievement__list {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
-    max-width: 252px;
-    min-height: 525px;
-    padding: 40px 48px 44px 48px;
-    background-color: $violet-color;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  max-width: 252px;
+  min-height: 525px;
+  padding: 40px 48px 44px 48px;
+  background-color: $violet-color;
 
-    li:not(:last-child) {
-        margin-bottom: 57px;
-    }
+  li:not(:last-child) {
+    margin-bottom: 57px;
+  }
 }
 
 .achievement__list__title {
-    font-size: 52px;
-    font-weight: 400;
-    line-height: 160%;
-    color: $white-color;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 160%;
+  color: $white-color;
 }
 
 .achievement__list__description {
-    font-size: 16px;
-    line-height: 160%;
-    color: $white-color;
+  font-size: 16px;
+  line-height: 160%;
+  color: $white-color;
 }
 
 /* SERVICE SECTION */
 
 .services {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .services__title {
-    position: relative;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 150%;
-    color: $black-color;
+  position: relative;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: $black-color;
 
-    &::after {
-        position: absolute;
-        content: '';
-        top: 9px;
-        left: 84px;
-        width: 516px;
-        height: 2px;
-        background-color: $black-color;
-    }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 84px;
+    width: 516px;
+    height: 2px;
+    background-color: $black-color;
+  }
 }
 
 .services__subtitle {
-    margin-bottom: 25px;
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 170%;
+  margin-bottom: 25px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 170%;
 }
 
 .services__description {
-    margin-bottom: 40px;
-    max-width: 471px;
-    font-size: 18px;
-    line-height: 160%;
-    color: $grey-color;
+  margin-bottom: 40px;
+  max-width: 471px;
+  font-size: 18px;
+  line-height: 160%;
+  color: $grey-color;
 }
 
 .services__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .services__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 388px;
-    min-height: 295px;
-    padding: 20px 27px 22px 27px;
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 388px;
+  min-height: 295px;
+  padding: 20px 27px 22px 27px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
 }
 
 .services__icon {
-    display: inline-block;
-    width: 63px;
-    height: 63px;
-    border-radius: 50%;
-    background-color: $light-grey-color;
+  display: inline-block;
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  background-color: $light-grey-color;
 }
 
 .services__item_title {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 140%;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 140%;
 }
 
 .services__item_description {
-    max-width: 334px;
-    font-size: 18px;
-    line-height: 160%;
-    color: $grey-color;
+  max-width: 334px;
+  font-size: 18px;
+  line-height: 160%;
+  color: $grey-color;
 }
